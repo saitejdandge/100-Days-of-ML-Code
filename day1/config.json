@@ -6,8 +6,8 @@
         1000,
         50
       ],
-      "tensorPath": "https://github.com/saitejdandge/100_Days_of_ML_Code/blob/master/day1/data.tsv",
-      "metadataPath": "https://github.com/saitejdandge/100_Days_of_ML_Code/blob/master/day1/metadata.tsv"
+      "tensorPath": "https://raw.githubusercontent.com/saitejdandge/100_Days_of_ML_Code/master/day1/data.tsv",
+      "metadataPath": "https://raw.githubusercontent.com/saitejdandge/100_Days_of_ML_Code/master/day1/metadata.tsv"
     }
   ]
 }
