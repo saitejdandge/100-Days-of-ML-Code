@@ -37,7 +37,7 @@ _________________________________________________________________
 
 <h3>Studied Stanford's lecture on CNN's</h3>
 
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/bNb2fEVKeEo/0.jpg)]
+<a href="https://www.youtube.com/watch?v=bNb2fEVKeEo&t=66s">[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/bNb2fEVKeEo/0.jpg)]</a>
 
 Keywords: Convolutional neural networks, perceptron, neocognitron, LeNet, AlexNet, convolution, pooling, fully-connected layers
 
