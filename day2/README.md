@@ -35,7 +35,7 @@ Train on 3242 samples, validate on 1081 samples
 <img width=900 height=600 src='screenshots/output_3.png'/>
 _________________________________________________________________
 
-<h4>Studied Stanford's lecture on CNN's</h4>
+<h3>Studied Stanford's lecture on CNN's</h3>
 
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/bNb2fEVKeEo/0.jpg)]
 
