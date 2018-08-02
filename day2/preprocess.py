@@ -5,6 +5,7 @@ import numpy as np
 import PIL
 import matplotlib.pyplot as plt
 from utils import *
+import os
 
 img_width=300
 

@@ -1,5 +1,5 @@
 from utils import *
-
+from matplotlib import pyplot
 from keras.layers import Dense, Conv2D, Dropout, Activation,MaxPooling2D,Flatten
 from sklearn.model_selection import train_test_split
 from keras.models import Sequential
@@ -7,9 +7,9 @@ from keras.models import Sequential
 x=get_value('x')
 y=get_value('y')
 
-x=x.astype('float')/255
-y=y.astype('float')/255
 
+x = x.astype('float32')
+x /= 255
 
 print('x shape',x.shape)
 print('y shape',y.shape)
@@ -42,8 +42,20 @@ print(model.summary())
 
 model.compile(loss='categorical_crossentropy',optimizer='rmsprop',metrics=['accuracy'])
 
-model.fit(x_train,y_train)
+history=model.fit(x_train,y_train,epochs=20,validation_data=(x_val,y_val), batch_size=10, verbose=1)
+
+if not (os.path.isdir("/model_data")):
+	os.makedirs("model_data")
+	pass
 
 model.save_weights('model_data/first_try.h5')
 
 model.evaluate(x_val,y_val)
+
+pyplot.plot(history.history['acc'],label='Training Accuracy')
+
+pyplot.plot(history.history['val_acc'],label='Validation Accuracy')
+
+pyplot.legend()
+
+pyplot.show()

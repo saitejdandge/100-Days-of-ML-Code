@@ -1,7 +1,7 @@
 from keras.utils import to_categorical
 from sklearn.preprocessing import LabelEncoder
 import pickle
-
+import os
 def convert_to_one_hot(Y):
     label_encoder = LabelEncoder()
     integer_encoded = label_encoder.fit_transform(Y)
@@ -19,11 +19,15 @@ def get_value(key):
     pass
 
 def set_value(key,value):
-    pickle_in = open("data/data.pickle","rb")
-    example_dict = pickle.load(pickle_in)
+    example_dict={}
+    if os.path.exists("data/data.pickle"):
+        pickle_in = open("data/data.pickle","rb")
+        example_dict = pickle.load(pickle_in)
+        pickle_in.close()
+        pass
     example_dict[key] = value
     pickle_out = open("data/data.pickle","wb")
     pickle.dump(example_dict, pickle_out)
     pickle_out.close()
-    pickle_in.close()
+    
     pass
