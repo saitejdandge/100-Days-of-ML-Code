@@ -1,10 +1,19 @@
-<h1>Understanding CNN</h1>
+<h1>Understanding CNN & Image Classification of Flowers</h1>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/bNb2fEVKeEo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>Studied Stanford CNN lecture</iframe>
+<h4>Studied Stanford's lecture on CNN's</h4>
 
-<img width=900 height=600 src='screenshots/output_1.png'/>
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/bNb2fEVKeEo/0.jpg)]
 
-<img width=900 height=600 src='screenshots/output_2.png'/>
+Keywords: Convolutional neural networks, perceptron, neocognitron, LeNet, AlexNet, convolution, pooling, fully-connected layers
+
+Slides: http://cs231n.stanford.edu/slides/2017/cs231n_2017_lecture5.pdf
+
+
+<h3>Image Classification of Flowers using CNN's</h3>
+<img width=600 height=600 src='screenshots/output_2.png'/>
+
+<img width=600 height=300 src='screenshots/output_1.png'/>
+
 
 
 <img width=900 height=600 src='screenshots/output_3.png'/>
