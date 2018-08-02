@@ -2,6 +2,14 @@
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/bNb2fEVKeEo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>Studied Stanford CNN lecture</iframe>
 
+<img width=900 height=600 src='screenshots/output_1.png'/>
+
+<img width=900 height=600 src='screenshots/output_2.png'/>
+
+
+<img width=900 height=600 src='screenshots/output_3.png'/>
+
+
 <ol>
 	<li>
 <img width=600 height=300 src='screenshots/1.png'/>
