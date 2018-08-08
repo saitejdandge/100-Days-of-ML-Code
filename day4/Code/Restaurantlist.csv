@@ -1,0 +1,121 @@
+CostType,Location,Cuisine,RestaurantName
+Cheap,West,Mexican,Mango
+Cheap,West,Chinese,24 Plus Cafe Restaurant
+Cheap,West,Vegetarian,6 Ballygunge Place
+Cheap,West,Non vegetarian,650 The Global Kitchen
+Cheap,West,Continental,99 North Restaurant
+Cheap,West,Punjabi,Aangan Downtown Multicuisine Restaurant
+Cheap,West,Casual,Aangan Horizon
+Cheap,West,Spicy,ABs Absolute Barbecues
+Cheap,West,Barbeque,Adda
+Cheap,West,Tandoori,Ahuja Milk Bhandar
+Cheap,East,Mexican,Ali Baba 41 Dishes
+Cheap,East,Chinese,Asia Kitchen by Mainland China
+Cheap,East,Vegetarian,Bade Bhai Ka Brothers Dhaba
+Cheap,East,Non vegetarian,Barbeque Nation
+Cheap,East,Continental,BarBQ
+Cheap,East,Punjabi,Basil With A Twist
+Cheap,East,Casual,Batlivala Khanabhoy
+Cheap,East,Spicy,Beera Chicken Corner
+Cheap,East,Barbeque,Bharawan Da Dhaba
+Cheap,East,Tandoori,Bird On Tree
+Cheap,North,Mexican,Black Pepper
+Cheap,North,Chinese,Blackout
+Cheap,North,Vegetarian,Bloomsburys Boutique Cafe and Artisan Bakery
+Cheap,North,Non vegetarian,Blue Rooftop Cafe Restaurant Bistro
+Cheap,North,Continental,Bombay Brasserie
+Cheap,North,Punjabi,Bon Gateau
+Cheap,North,Casual,Brewberrys The Coffee Bar
+Cheap,North,Spicy,Brick Kitchen
+Cheap,North,Barbeque,Brijwasi Chat Bhandar
+Cheap,North,Tandoori,Brooklyn Central
+Cheap,South,Mexican,Brothers Amritsari Dhaba
+Cheap,South,Chinese,Brothers Dhaba
+Cheap,South,Vegetarian,Bubby Fish Chicken Corner
+Cheap,South,Non vegetarian,Burger Ka Baap
+Cheap,South,Continental,Burgrill
+Cheap,South,Punjabi,Cafe 17
+Cheap,South,Casual,Cafe Alfresco
+Cheap,South,Spicy,Cafe LazyMojo
+Cheap,South,Barbeque,Cafe Totaram
+Cheap,South,Tandoori,CakeBee
+Medium,West,Mexican,Calzone Dine Rooftop Lounge
+Medium,West,Chinese,Central Perk 7
+Medium,West,Vegetarian,Cha cTea
+Medium,West,Non vegetarian,Chai Break
+Medium,West,Continental,ChaiCofi
+Medium,West,Punjabi,Chao Chinese Bistro Holiday Inn Jaipur City Centre
+Medium,West,Casual,Charming Chicken
+Medium,West,Spicy,Chilis
+Medium,West,Barbeque,Chill Ummm
+Medium,West,Tandoori,Chiyang
+Medium,East,Mexican,Chokhi Dhani
+Medium,East,Chinese,Churrolto
+Medium,East,Vegetarian,Ciclo Cafe
+Medium,East,Non vegetarian,Coal Barbecues
+Medium,East,Continental,Cocoa Tree
+Medium,East,Punjabi,Coffee Culture The Ristorante Lounge
+Medium,East,Casual,Coffee Cup
+Medium,East,Spicy,Coní u
+Medium,East,Barbeque,Cream Centre
+Medium,East,Tandoori,Cream Stone
+Medium,North,Mexican,Cryo Lab
+Medium,North,Chinese,Crystal Restaurant
+Medium,North,Vegetarian,Decked Up By Garden Cafe
+Medium,North,Non vegetarian,Dhe Puttu
+Medium,North,Continental,Dock Forty Five
+Medium,North,Punjabi,Eram Rooftop
+Medium,North,Casual,Exotica
+Medium,North,Spicy,Falafel Lovers
+Medium,North,Barbeque,Flame Grill
+Medium,North,Tandoori,Food Fever
+Medium,South,Mexican,Fozzies Pizzaiolo
+Medium,South,Chinese,French Toast
+Medium,South,Vegetarian,Fusilli Reasons
+Medium,South,Non vegetarian,Gabbars Bar Kitchen
+Medium,South,Continental,Global Local
+Medium,South,Punjabi,Golden Dragon
+Medium,South,Casual,Grand Hotel Restaurant
+Medium,South,Spicy,Gurdas Ram Jalebi Wala
+Medium,South,Barbeque,Haribhavanam Hotel
+Medium,South,Tandoori,Haunted
+Expensive,West,Mexican,Heart Cup Coffee
+Expensive,West,Chinese,Hoppipola
+Expensive,West,Vegetarian,Huber Holly
+Expensive,West,Non vegetarian,Ifthar
+Expensive,West,Continental,India Restaurant
+Expensive,West,Punjabi,Jonathans Kitchen Holiday Inn Express Suites
+Expensive,West,Casual,JUGAAD JN.
+Expensive,West,Spicy,Kabir Restaurant
+Expensive,West,Barbeque,Kaidi Kitchen
+Expensive,West,Tandoori,Kanha Sweets
+Expensive,East,Mexican,Kansar Gujarati Thali
+Expensive,East,Chinese,Karims
+Expensive,East,Vegetarian,Kashi Art Cafe
+Expensive,East,Non vegetarian,Kesar Da Dhabha
+Expensive,East,Continental,Kites Cafe
+Expensive,East,Punjabi,Kuchi n Kream
+Expensive,East,Casual,Kylin Experience
+Expensive,East,Spicy,La Pinoz Pizza
+Expensive,East,Barbeque,La Roma Pizzeria
+Expensive,East,Tandoori,Lal Qila
+Expensive,North,Mexican,Lamandier
+Expensive,North,Chinese,Leonardo Italian Mediterranean Dining
+Expensive,North,Vegetarian,Level 5 Terrace Restro Cafe
+Expensive,North,Non vegetarian,Mainland China
+Expensive,North,Continental,Makhan Fish and Chicken Corner
+Expensive,North,Punjabi,Mamma Mia Mayfair Lagoon
+Expensive,North,Casual,Mamus Infusion
+Expensive,North,Spicy,Maplai
+Expensive,North,Barbeque,Mazzo
+Expensive,North,Tandoori,Meraaki Kitchen
+Expensive,South,Mexican,Michaels Kitchen
+Expensive,South,Chinese,Midnight Chef
+Expensive,South,Vegetarian,Mocambo
+Expensive,South,Non vegetarian,Mocha
+Expensive,South,Continental,Mocha Bar
+Expensive,South,Punjabi,MoMo Cafí© Courtyard By Marriott
+Expensive,South,Casual,Monarch Restaurant Holiday Inn Jaipur City Centre
+Expensive,South,Spicy,Mumbai Local
+Expensive,South,Barbeque,Mustake Multicuisine Restaurant
+Expensive,South,Tandoori,Mutuals
