@@ -6,33 +6,24 @@ import PIL
 import matplotlib.pyplot as plt
 from utils import *
 import os
-
-img_width=300
-
-img_height=300
+import tkinter as tk
+from tkinter.filedialog import askdirectory
 
 dir_path = os.path.dirname(os.path.realpath(__file__))
 
-# # Print out its shape
-# print(image.shape)
-# plt.imshow(image)
-# plt.show()
+original_data_dir = askdirectory()
 
+base_folder=os.path.basename(original_data_dir)
 
-def square_image(filename,path):
-	im = Image.open(filename)
-	#sqrWidth = np.ceil(np.sqrt(im.size[0]*im.size[1])).astype(int)
-	im_resize = im.resize((img_width, img_height))
-	if not os.path.exists(os.path.dirname(path)):
-  	  os.makedirs(os.path.dirname(path))
-	im_resize.save(path)
-	pass
+print('Base_Folder ',base_folder)
 
-squared_dir=dir_path+"/squared_images"
+img_height=img_width=300
+
+squared_dir=original_data_dir+"/preprocessed_images"
 
 print("Rescaling Images to dimension ",str(img_width)+" * "+str(img_height))
 
-for subdir, dirs, files in os.walk(dir_path+"/flowers/"):
+for subdir, dirs, files in os.walk(original_data_dir+"/original"):
    
     for file in files:
         #print os.path.join(subdir, file)
@@ -44,8 +35,9 @@ for subdir, dirs, files in os.walk(dir_path+"/flowers/"):
 
         	new_file_path=str(squared_dir)+"/"+str(class_name)+"/"+str(file)
 
-        	square_image(filepath,new_file_path)
+        	square_image(filepath,new_file_path,img_width,img_height)
    
+
 print("Finished Rescaling Images")
 
 x=[]
@@ -53,14 +45,7 @@ y=[]
 
 print("Converting Images to Arrays")
 
-# Reading image
-def read_image(filepath,class_name):
-    image = mpimg.imread(filepath)
-    x.append(image)
-    y.append(class_name)
-    pass
-
-for subdir, dirs, files in os.walk(dir_path+"/squared_images/"):
+for subdir, dirs, files in os.walk(original_data_dir+"/preprocessed_images/"):
    
     for file in files:
         #print os.path.join(subdir, file)
@@ -72,31 +57,33 @@ for subdir, dirs, files in os.walk(dir_path+"/squared_images/"):
 
             new_file_path=str(squared_dir)+"/"+str(class_name)+"/"+str(file)
 
-            read_image(filepath,class_name)
+            read_image(filepath,class_name,x,y)
 
 x=np.array(x)
 
 y=np.array(y)
 
-le,y=convert_to_one_hot(y)
+print("One-Hot Encoding Labels")
 
-print("Finished Converting Images to Arrays")
+le,y=convert_to_one_hot(y,base_folder)
+
+
 
 print("Saving X, Y objects locally")
 
-set_value('x',x)
+set_value('x',x,base_folder)
 
-set_value('y',y)
+set_value('y',y,base_folder)
 
 print("Finished X, Y objects locally")
 
-print('mapping ',get_value('mapping'))
+print('mapping ',get_value('mapping',base_folder))
 
-print('x shape',get_value('x').shape)
+print('x shape',get_value('x',base_folder).shape)
 
-print('y shape',get_value('y').shape)
+print('y shape',get_value('y',base_folder).shape)
 
-
+print("Finished Preprocessing, Run model.py and select folder.")
 
 
 
