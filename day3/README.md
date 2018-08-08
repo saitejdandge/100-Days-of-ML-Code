@@ -1,4 +1,4 @@
-<h1>Understanding RNNS & Predicting Time_Series Based values(Sine Function) using BiDirectional LSTM RNN</h1>
+<h1>Understanding RNNS & Time Series Based value (Sine Function) Regression using BiDirectional LSTM RNN</h1>
 
 
 dataset shape  (5000, 1)
