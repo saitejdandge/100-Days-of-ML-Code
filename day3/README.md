@@ -16,7 +16,7 @@ Trainable params: 13,521
 Non-trainable params: 0
 Train on 1248 samples, validate on 417 samples
 
-<img width=600 height=600 src='predictionspng'/>
+<img width=600 height=600 src='predictions.png'/>
 
 <img width=600 height=300 src='Figure_1.png'/>
 
