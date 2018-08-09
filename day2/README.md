@@ -1,6 +1,9 @@
 <h1>Understanding CNN & Image Classification of Flowers</h1>
 
 <h3>Image Classification of Flowers using CNN's</h3>
+
+googleimagesdownload -cf dataset_config.json -o 'original'
+
 x shape (4323, 300, 300, 3)
 y shape (4323, 5)
 

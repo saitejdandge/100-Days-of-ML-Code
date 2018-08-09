@@ -11,7 +11,10 @@ from tkinter.filedialog import askdirectory
 
 dir_path = os.path.dirname(os.path.realpath(__file__))
 
-original_data_dir = askdirectory()
+#original_data_dir = askdirectory()
+dir_name=input("Enter images dir")
+
+original_data_dir  = os.path.dirname(os.path.realpath(__file__))+"/"+str(dir_name)
 
 base_folder=os.path.basename(original_data_dir)
 

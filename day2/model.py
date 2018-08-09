@@ -10,7 +10,10 @@ import numpy as np
 from sklearn.metrics import classification_report
 
 #original_data_dir = askdirectory()
-original_data_dir  = os.path.dirname(os.path.realpath(__file__))+"/flowers"
+
+dir_name=input("Enter images dir")
+
+original_data_dir  = os.path.dirname(os.path.realpath(__file__))+"/"+str(dir_name)
 
 base_folder=os.path.basename(original_data_dir)
 
@@ -51,15 +54,15 @@ model = Sequential()
 model.add(Conv2D(32, (3, 3), input_shape=x.shape[1:]))
 model.add(Activation('relu'))
 model.add(MaxPooling2D(pool_size=(2, 2)))
-
+model.add(Dropout(0.5))
 model.add(Conv2D(32, (3, 3)))
 model.add(Activation('relu'))
 model.add(MaxPooling2D(pool_size=(2, 2)))
-
+model.add(Dropout(0.5))
 model.add(Conv2D(64, (3, 3)))
 model.add(Activation('relu'))
 model.add(MaxPooling2D(pool_size=(2, 2)))
-
+model.add(Dropout(0.5))
 model.add(Flatten())
 model.add(Dense(64))
 model.add(Activation('relu'))
@@ -71,7 +74,7 @@ print(model.summary())
 
 model.compile(loss='categorical_crossentropy',optimizer='rmsprop',metrics=['accuracy'])
 
-history=model.fit(x_train,y_train,epochs=40,validation_data=(x_val_scaled,y_val), batch_size=10, verbose=1)
+history=model.fit(x_train,y_train,epochs=20,validation_data=(x_val_scaled,y_val), batch_size=10, verbose=1)
 
 if not (os.path.isdir(base_folder+"/model_data")):
 	os.makedirs(base_folder+"/model_data")
@@ -81,7 +84,7 @@ model_name="model"
 
 model.save_weights(base_folder+'/model_data/'+model_name+'_weights.h5')
 
-model.save_weights(base_folder+'/model_data/'+model_name+'.h5')
+model.save(base_folder+'/model_data/'+model_name+'.h5')
 
 print("Model saved")
 #model.evaluate(x_val,y_val)

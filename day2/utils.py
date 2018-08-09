@@ -7,6 +7,7 @@ from PIL import Image
 from numpy import argmax
 import numpy as np
 import matplotlib.pyplot as plt
+
 def convert_to_one_hot(Y,base_folder):
     label_encoder = LabelEncoder()
     integer_encoded = label_encoder.fit_transform(Y)
@@ -52,7 +53,7 @@ def square_image(filename,path,img_width,img_height):
     if not os.path.exists(os.path.dirname(path)):
       os.makedirs(os.path.dirname(path))
     im_resize.save(path)
-    pass
+    return path
 
 def set_value(key,value,base_folder):
     example_dict={}
