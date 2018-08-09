@@ -1,6 +1,6 @@
-<h1>Understanding CNN & Image Classification of Flowers</h1>
+<h1>Understanding CNN & Image Classification</h1>
 
-<h3>Image Classification of Flowers using CNN's</h3>
+<h3>Image Classification using CNN's</h3>
 
 googleimagesdownload -cf dataset_config.json -o 'original'
 
