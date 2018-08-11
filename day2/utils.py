@@ -7,6 +7,7 @@ from PIL import Image
 from numpy import argmax
 import numpy as np
 import matplotlib.pyplot as plt
+from urllib.request import urlopen
 
 def convert_to_one_hot(Y,base_folder):
     label_encoder = LabelEncoder()
@@ -18,23 +19,31 @@ def convert_to_one_hot(Y,base_folder):
 
 
 # Reading image
+
 def read_image(filepath,class_name,x,y):
+
     image = mpimg.imread(filepath)
-    x.append(image)
-    y.append(class_name)
+
+    if image is not None:
+        image=image[:,:,:3] #removing alpha channel
+        x.append(image)
+        y.append(class_name)
+
     pass
 
 def get_value(key,base_folder):
     if os.path.exists(base_folder+"/pickle_objects/data.pickle"):
 
         pickle_in = open(base_folder+"/pickle_objects/data.pickle","rb")
+
         example_dict = pickle.load(pickle_in)
+
         pickle_in.close()
+
         return example_dict[key]
     else:
         return None
     pass
-
 
 def convert_to_labels(Y,base_folder):
 
@@ -46,13 +55,20 @@ def convert_to_labels(Y,base_folder):
     arr=np.array(arr)
     return arr
 
-def square_image(filename,path,img_width,img_height):
-    im = Image.open(filename)
+def square_image(path,img_width,img_height):
+
+
+    im = Image.open(path)
+    
     #sqrWidth = np.ceil(np.sqrt(im.size[0]*im.size[1])).astype(int)
+    
     im_resize = im.resize((img_width, img_height))
+    
     if not os.path.exists(os.path.dirname(path)):
       os.makedirs(os.path.dirname(path))
+    
     im_resize.save(path)
+
     return path
 
 def set_value(key,value,base_folder):

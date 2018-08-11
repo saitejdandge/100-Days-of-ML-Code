@@ -1,10 +1,8 @@
-import tkinter as tk
-from tkinter.filedialog import askopenfilename
+
 from keras.models import load_model
 from utils import *
 import matplotlib.image as mpimg
 import sys
-# tk().withdraw() # we don't want a full GUI, so keep the root window from appearing
 
 dir_name=input("Enter images dir")
 
@@ -18,12 +16,11 @@ model=load_model(original_data_dir+'/model_data/model.h5')
 
 filename=sys.argv[1]
 
-#filename=askopenfilename()
-
-
-squared_image=square_image(filename,original_data_dir+'/test.jpg',300,300)
+squared_image=square_image(filename,300,300)
 
 x=mpimg.imread(squared_image)
+
+x=x[:,:,:3] #removing alpha channel
 
 x=x.reshape([1,x.shape[0],x.shape[1],x.shape[2]])
 
